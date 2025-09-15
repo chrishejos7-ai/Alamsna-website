@@ -4,164 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AlamsNa - Contact</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --blue:#2563eb;
-      --light-blue:#60a5fa;
-      --bg:#ffffff;
-      --text:#1e293b;
-      --muted:#64748b;
-      --radius:16px;
-      --shadow:0 6px 20px rgba(37,99,235,.12);
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    a {text-decoration:none; color:inherit;}
-
-    /* HEADER */
-    header {
-      display:flex; justify-content:space-between; align-items:center;
-      padding:1rem 2rem; position:sticky; top:0;
-      background:#fff; box-shadow:0 2px 6px rgba(0,0,0,.05);
-      z-index:50;
-    }
-    .logo {font-weight:800;font-size:1.3rem;color:var(--blue);}
-    nav a {
-      margin-left:1.2rem; font-weight:500; color:var(--text);
-      padding:.4rem .8rem; border-radius:8px; transition:.2s;
-    }
-    nav a:hover {background:rgba(37,99,235,.08); color:var(--blue);}
-    nav a.active {color:var(--blue); font-weight:600;}
-
-    /* HERO */
-    .hero {
-      height:40vh; display:flex; justify-content:center; align-items:center;
-      text-align:center;
-      background:linear-gradient(135deg, var(--blue), var(--light-blue));
-      color:#fff; padding:2rem;
-    }
-    .hero h1 {
-      font-family:'Playfair Display', serif; font-size:clamp(2rem,5vw,3rem);
-      margin-bottom:.5rem;
-    }
-    .hero p {font-weight:400;font-size:clamp(1rem,2vw,1.2rem);}
-
-    main {max-width:1000px;margin:auto;padding:3rem 1rem;}
-
-    main h2 {text-align:center;margin-bottom:2rem;color:var(--blue);}
-    h3 {margin-bottom:1rem;color:#1e3a8a;}
-
-    .contact-info, .contact-form, .social-media, .map {
-      background:#fff; border-radius:var(--radius); box-shadow:var(--shadow);
-      padding:2rem; margin-bottom:2rem;
-    }
-
-    .contact-info p {margin:.4rem 0;color:var(--muted);}
-    .contact-info a {color:var(--blue);font-weight:600;}
-
-    /* FORM */
-    form label {font-weight:600;color:#334155;}
-    input, textarea {
-      width:100%;padding:.7rem 1rem;margin-top:.4rem;margin-bottom:1rem;
-      border:1px solid #cbd5e1;border-radius:var(--radius);
-      font-size:1rem;font-family:inherit;
-    }
-    input:focus, textarea:focus {
-      border-color:var(--blue);outline:none;box-shadow:0 0 0 3px rgba(37,99,235,.15);
-    }
-    .btn {
-      background:var(--blue); color:#fff;
-      padding:.8rem 1.6rem; border-radius:999px; font-weight:600;
-      border:none; cursor:pointer; transition:.2s;
-    }
-    .btn:hover {background:#1d4ed8;}
-
-    /* SOCIAL */
-    .social-media p a {
-      color:var(--blue); font-weight:600; margin:0 .5rem;
-    }
-
-    /* MAP */
-    iframe {border-radius:var(--radius);box-shadow:var(--shadow);}
-
-    /* FOOTER */
-    footer {
-      margin-top:3rem; padding:2rem; text-align:center;
-      background:#f1f5f9; color:var(--muted);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <div class="logo">AlamsNa.</div>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="services.html">Services Page</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </header>
+  <div class="logo">AlamsNa.</div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="services.html">Services </a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <!-- HERO -->
-  <section class="hero contact-hero">
-    <div class="hero-content">
-      <h1>Contact Us</h1>
-      <p>We’d love to hear from you. Get in touch today!</p>
-    </div>
+<section class="hero contact-hero">
+  <div class="hero-content">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you. Get in touch today!</p>
+  </div>
+</section>
+<center>
+  <main>
+    <h1>Get in Touch</h1>
+    <br>
+    <div class="contact-info">
+    <p><strong>Email:</strong> <a href="mailto:alamsna@gmail.com">alamsna@gmail.com</a></p>
+    <p><strong>Phone:</strong> +63 9265438674</p>
+    <p><strong>Address:</strong> Cantilan, Surigao del Sur, Philippines</p>
+  </div>
+
+  <!-- Contact Form -->
+  <section class="contact-form">
+    <h3>Send Us a Message</h3>
+    <form action="#" method="post">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea><br><br>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
   </section>
 
-  <main>
-    <h2>Get in Touch</h2>
+  <!-- Social Media -->
+  <section class="social-media">
+    <h3>Follow Us</h3>
+    <p>
+      <a href="https://www.facebook.com/claribelle.pariente.alipaspas.2025">Facebook</a> | 
+      <a href="https://www.instagram.com/jimwelllincuna/">Instagram</a> | 
+      <a href="https://www.linkedin.com/in/jimwell-lincuna-9aa7aa384?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+    </p>
+  </section>
 
-    <!-- Contact Info -->
-    <div class="contact-info">
-      <p><strong>Email:</strong> <a href="mailto:alamsna@gmail.com">alamsna@gmail.com</a></p>
-      <p><strong>Phone:</strong> +63 9265438674</p>
-      <p><strong>Address:</strong> Cantilan, Surigao del Sur, Philippines</p>
-    </div>
-
-    <!-- Contact Form -->
-    <section class="contact-form">
-      <h3>Send Us a Message</h3>
-      <form action="#" method="post">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
-
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </section>
-
-    <!-- Social Media -->
-    <section class="social-media">
-      <h3>Follow Us</h3>
-      <p>
-        <a href="https://www.facebook.com/claribelle.pariente.alipaspas.2025">Facebook</a> | 
-        <a href="https://www.instagram.com/jimwelllincuna/">Instagram</a> | 
-        <a href="https://www.linkedin.com/in/jimwell-lincuna-9aa7aa384">LinkedIn</a>
-      </p>
-    </section>
-
-    <!-- Google Map -->
-    <section class="map">
-      <h3>Find Us</h3>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.813038640323!2d125.95640321469207!3d9.336473193130787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33067776cb7e1587%3A0xe5471c9bfabea3ef!2sCantilan%2C%20Surigao%20del%20Sur%2C%20Philippines!5e0!3m2!1sen!2sph!4v1694774760000!5m2!1sen!2sph"
-        width="100%" height="300" allowfullscreen="" loading="lazy">
-      </iframe>
-    </section>
-  </main>
+  <!-- Google Map Embed -->
+  <section class="map">
+    <h3>Find Us</h3>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.813038640323!2d125.95640321469207!3d9.336473193130787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33067776cb7e1587%3A0xe5471c9bfabea3ef!2sCantilan%2C%20Surigao%20del%20Sur%2C%20Philippines!5e0!3m2!1sen!2sph!4v1694774760000!5m2!1sen!2sph"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+</main>
 
   <footer>
     <p>&copy; 2025 AlamsNa. All rights reserved.</p>

@@ -1,0 +1,215 @@
+/* General reset */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+header nav a.active,
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: url('images/bg1.webp') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5); /* dark overlay */
+}
+
+.hero-content {
+  position: relative; /* para makita sa ibabaw ng overlay */
+  z-index: 1;
+}
+.hero-content h1 {
+  font-size: 4rem;   /* dati 3rem, mas malaki na ngayon */
+  font-weight: bold;
+}
+
+.hero-content h3 {
+  font-size: 2rem;   /* dati 1.5rem, mas kita na */
+  margin-top: 15px;
+}
+
+.services-hero {
+  background-image: url("images/bg2.jpg"); /* ← services background */
+}
+
+/* About page */
+.about-hero {
+  background-image: url("images/about-bg.jpg");
+}
+
+/* Contact page */
+.contact-hero {
+  background-image: url("images/contact-bg.jpg");
+}
+
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.intro p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+.btn {
+  background: #004aad;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  background: #0066ff;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+/* Service Preview Section */
+.service-preview {
+  padding: 3rem 1rem;
+}
+
+.service-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* para responsive sa maliit na screen */
+}
+
+.service-image img {
+  max-width: 280px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.service-text {
+  max-width: 500px;
+}
+
+.service-text h2 {
+  font-size: 2rem;
+  color: #004aad;
+  margin-bottom: 1rem;
+}
+
+.service-text p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+/* Services */
+.service-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dbeafe; /* light blue */
+  padding: 40px;
+  margin: 30px auto;
+  border-radius: 12px;
+  max-width: 1000px;
+  gap: 30px;
+}
+
+.service-image img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.service-info {
+  flex: 1;
+}
+
+.service-info h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.color-red { color: red; }
+.color-yellow { color: yellow; }
+.color-green { color: green; }
+.color-purple { color: purple; }
+
+.price {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-block;
+  background: #1e3a8a;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #3b82f6;
+}
+
+

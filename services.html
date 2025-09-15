@@ -4,206 +4,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AlamsNa - Services</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --blue:#2563eb;
-      --light-blue:#60a5fa;
-      --bg:#ffffff;
-      --text:#1e293b;
-      --muted:#64748b;
-      --radius:16px;
-      --shadow:0 6px 20px rgba(37,99,235,.12);
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    a {text-decoration:none; color:inherit;}
-
-    /* HEADER */
-    header {
-      display:flex; justify-content:space-between; align-items:center;
-      padding:1rem 2rem; position:sticky; top:0;
-      background:#fff; box-shadow:0 2px 6px rgba(0,0,0,.05);
-      z-index:50;
-    }
-    .logo {font-weight:800;font-size:1.3rem;color:var(--blue);}
-    nav a {
-      margin-left:1.2rem; font-weight:500; color:var(--text);
-      padding:.4rem .8rem; border-radius:8px; transition:.2s;
-    }
-    nav a:hover {background:rgba(37,99,235,.08); color:var(--blue);}
-    nav a.active {color:var(--blue); font-weight:600;}
-
-    /* HERO */
-    .hero {
-      height:45vh; display:flex; justify-content:center; align-items:center;
-      text-align:center;
-      background:linear-gradient(135deg, var(--blue), var(--light-blue));
-      color:#fff; padding:2rem;
-    }
-    .hero h1 {
-      font-family:'Playfair Display', serif; font-size:clamp(2rem,5vw,3rem);
-      margin-bottom:.5rem;
-    }
-    .hero h4 {font-weight:400;font-size:clamp(1rem,2vw,1.2rem);}
-
-    /* SERVICE ITEM */
-    .service-item {
-      display:grid; gap:2rem; align-items:center;
-      grid-template-columns:1fr; max-width:1000px; margin:3rem auto;
-      background:#fff; border-radius:var(--radius); box-shadow:var(--shadow);
-      padding:2rem;
-      transition:.3s;
-    }
-    .service-item:hover {transform:translateY(-4px);}
-    .service-image img {width:100%;border-radius:var(--radius);}
-    .service-info h2 {color:var(--blue);margin-bottom:.6rem;font-size:1.6rem;}
-    .service-info p {color:var(--muted);}
-    .price {margin:.8rem 0;font-weight:600;color:#111827;}
-    .btn {
-      display:inline-block; background:var(--blue); color:#fff;
-      padding:.6rem 1.2rem; border-radius:999px; font-weight:600;
-      box-shadow:var(--shadow); transition:.25s;
-    }
-    .btn:hover {background:#1d4ed8;}
-    @media(min-width:900px){
-      .service-item {grid-template-columns:1fr 1fr;}
-      .service-item:nth-child(even) .service-image {order:2;}
-    }
-
-    /* COLORFUL WORDS */
-    .color-red{color:#dc2626;}
-    .color-yellow{color:#ca8a04;}
-    .color-green{color:#16a34a;}
-    .color-purple{color:#7e22ce;}
-
-    /* FOOTER */
-    footer {
-      margin-top:3rem; padding:2rem; text-align:center;
-      background:#f1f5f9; color:var(--muted);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <div class="logo">AlamsNa.</div>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="services.html" class="active">Services Page</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <div class="logo">AlamsNa.</div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="services.html">Services </a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <!-- HERO -->
-  <section class="hero services-hero">
-    <div class="hero-content">
-      <h1>Our Services</h1>
-      <h4>We provide high-quality IT services tailored for you.</h4>
-    </div>
-  </section>
+<section class="hero services-hero">
+  <div class="hero-content">
+    <h1>Our Services</h1>
+    <h4>We provide high-quality services tailored for you.</h4>
+  </div>
+</section>
 
-  <!-- Graphic Design -->
-  <section class="service-item">
-    <div class="service-image">
-      <img src="images/gra.png" alt="Graphic Design">
-    </div>
-    <div class="service-info">
-      <h2>
-        <span class="color-red">Cus</span><span class="color-yellow">tom</span> 
+ <section class="service-item">
+  <div class="service-image">
+    <img src="images/gra.png" alt="Graphic Design">
+  </div>
+  <div class="service-info">
+    <h2><span class="color-red">Cus</span><span class="color-yellow">tom</span> 
         <span class="color-green">Graphic</span> 
-        <span class="color-purple">Design</span>
-      </h2>
-      <p>Logos, posters, stickers, social media templates</p>
-      <p class="price">💵 Price: ₱200 – ₱500 <small>(depends on complexity)</small></p>
-      <a href="order.html" class="btn">Order Now</a>
-    </div>
-  </section>
+        <span class="color-purple">Design</span></h2>
+    <p>Logos, posters, stickers, social media templates</p>
+    <p class="price">💵 Price: ₱200 – ₱500 <small>(depends on complexity)</small></p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_qjhHXsxQhP9Ug4dEqVnOymRQuRfhvHhvIwTCdxFHAHrdQ/viewform?usp=dialog" class="btn">Order Now</a>
+  </div>
+</section>
 
-  <!-- AutoCAD -->
-  <section class="service-item">
-    <div class="service-image">
-      <img src="images/Autocad-Logo.png" alt="AutoCAD">
-    </div>
-    <div class="service-info">
-      <h2>AutoCAD Mini Projects</h2>
-      <p>Simple layouts, drafting, 2D/3D sketches</p>
-      <p class="price">💵 Price: ₱300 – ₱800 <small>(per project)</small></p>
-      <a href="order.html" class="btn">Order Now</a>
-    </div>
-  </section>
 
-  <!-- PC Assembly -->
-  <section class="service-item">
-    <div class="service-image">
-      <img src="images/pc.jpg" alt="PC Assembly">
-    </div>
-    <div class="service-info">
-      <h2>PC Assembly & Setup</h2>
-      <p>Custom PC builds, cable management, OS installation, and optimization for gaming, school, or work.</p>
-      <p class="price">💵 Price: ₱500 – ₱1,500 <small>(per build)</small></p>
-      <a href="order.html" class="btn">Order Now</a>
-    </div>
-  </section>
 
-  <!-- Networking -->
-  <section class="service-item">
-    <div class="service-image">
-      <img src="images/net.jpg" alt="Networking">
-    </div>
-    <div class="service-info">
-      <h2>Networking Setup & Troubleshooting</h2>
-      <p>Wi-Fi installation, router configuration, and small business/home network troubleshooting.</p>
-      <p class="price">💵 Price: ₱300 – ₱1,000 <small>(depends on scope)</small></p>
-      <a href="order.html" class="btn">Order Now</a>
-    </div>
-  </section>
+ <section class="service-item">
+  <div class="service-image">
+    <img src="images/Autocad-Logo.png" alt="auto">
+  </div>
+  <div class="service-info">
+    <h2><span class="color-red">AutoCAD Mini Projects</span></h2>
+        
+    <p>Simple layouts, drafting, 2D/3D sketches</p>
+    <p class="price">💵 Price: ₱300 – ₱800  <small>(per project)</small></p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_qjhHXsxQhP9Ug4dEqVnOymRQuRfhvHhvIwTCdxFHAHrdQ/viewform?usp=dialog" class="btn">Order Now</a>
+  </div>
+</section>
+ 
 
-  <!-- Web Development -->
-  <section class="service-item">
-    <div class="service-image">
-      <img src="images/webdev.jpg" alt="Web Development">
-    </div>
-    <div class="service-info">
-      <h2>Web Development</h2>
-      <p>Responsive websites for personal portfolios, school projects, or small businesses using modern tools.</p>
-      <p class="price">💵 Price: ₱1,000 – ₱5,000 <small>(depends on features)</small></p>
-      <a href="order.html" class="btn">Order Now</a>
-    </div>
-  </section>
+<section class="service-item">
+  <div class="service-image">
+    <img src="images/stu.png" alt="auto">
+  </div>
+  <div class="service-info">
+    <h2><span class="color-blue">Student-Friendly Services </span></h2>
+        
+    <p>Resume design, portfolio layouts, report formatting </p>
+    <p class="price">💵 Price: ₱150 – ₱400   <small>(per project)</small></p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_qjhHXsxQhP9Ug4dEqVnOymRQuRfhvHhvIwTCdxFHAHrdQ/viewform?usp=dialog" class="btn">Order Now</a>
+  </div>
+</section>
 
-  <!-- IT Support -->
-  <section class="service-item">
-    <div class="service-image">
-      <img src="images/itsupport.jpg" alt="IT Support">
-    </div>
-    <div class="service-info">
-      <h2>IT Support & Maintenance</h2>
-      <p>PC troubleshooting, virus removal, software updates, and basic training for users.</p>
-      <p class="price">💵 Price: ₱200 – ₱600 <small>(per session)</small></p>
-      <a href="order.html" class="btn">Order Now</a>
-    </div>
-  </section>
 
-  <!-- Database -->
-  <section class="service-item">
-    <div class="service-image">
-      <img src="images/database.jpg" alt="Database">
-    </div>
-    <div class="service-info">
-      <h2>Database Design & Management</h2>
-      <p>Small-scale databases for projects, inventory systems, or school systems using MySQL or SQLite.</p>
-      <p class="price">💵 Price: ₱500 – ₱2,000 <small>(per project)</small></p>
-      <a href="order.html" class="btn">Order Now</a>
-    </div>
-  </section>
 
-  <!-- FOOTER -->
+<section class="service-item">
+  <div class="service-image">
+    <img src="images/tec.png" alt="auto">
+  </div>
+  <div class="service-info">
+    <h2><span class="color-blue">Tech Assistance </span></h2>
+        
+    <p>Basic IT support, system troubleshooting, advice  </p>
+    <p class="price">💵 Price: ₱100 – ₱300     <small>(per session)</small></p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_qjhHXsxQhP9Ug4dEqVnOymRQuRfhvHhvIwTCdxFHAHrdQ/viewform?usp=dialog" class="btn">Order Now</a>
+  </div>
+</section>
+
+
+
+<section class="service-item">
+  <div class="service-image">
+    <img src="images/pc2.webp" alt="auto">
+  </div>
+  <div class="service-info">
+    <h2><span class="color-blue">PC Assembly & Setup </span></h2>
+        
+    <p>Parts recommendation, assembly, cable management  </p>
+    <p class="price">💵 Price: ₱500 – ₱1,500 <small> (depending on build)</small></p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_qjhHXsxQhP9Ug4dEqVnOymRQuRfhvHhvIwTCdxFHAHrdQ/viewform?usp=dialog" class="btn">Order Now</a>
+  </div>
+</section>
+
+
+
+
   <footer>
     <p>&copy; 2025 AlamsNa. All rights reserved.</p>
   </footer>

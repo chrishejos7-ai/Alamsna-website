@@ -5,104 +5,391 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AlamsNa - Services</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   <header>
   <div class="logo">AlamsNa.</div>
   <nav>
     <a href="index.html">Home</a>
-    <a href="services.html">Services </a>
+    <a href="services.html" class="active">Services</a>
     <a href="about.html">About Us</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
 
-<section class="hero services-hero">
-  <div class="hero-content">
-    <h1>Our Services</h1>
-    <h4>We provide high-quality services tailored for you.</h4>
+<br>
+
+<!-- Service Categories Filter -->
+<section class="service-categories">
+  <div class="container">
+    <h2 class="section-title">Choose Your Service Category</h2>
+    <div class="category-filters">
+      <button class="filter-btn active" data-category="all">All Services</button>
+      <button class="filter-btn" data-category="design">Design</button>
+      <button class="filter-btn" data-category="tech">Technology</button>
+      <button class="filter-btn" data-category="academic">Academic</button>
+    </div>
   </div>
 </section>
 
- <section class="service-item">
-  <div class="service-image">
-    <img src="images/gra.png" alt="Graphic Design">
-  </div>
-  <div class="service-info">
-    <h2><span class="color-red">Cus</span><span class="color-yellow">tom</span> 
-        <span class="color-green">Graphic</span> 
-        <span class="color-purple">Design</span></h2>
-    <p>Logos, posters, stickers, social media templates</p>
-    <p class="price">💵 Price: ₱200 – ₱500 <small>(depends on complexity)</small></p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_qjhHXsxQhP9Ug4dEqVnOymRQuRfhvHhvIwTCdxFHAHrdQ/viewform?usp=dialog" class="btn">Order Now</a>
+<!-- Services Grid -->
+<section class="services-showcase">
+  <div class="container">
+    <div class="services-grid">
+      <!-- Graphic Design Service -->
+      <div class="service-card design" data-category="design">
+        <div class="service-header">
+          <div class="service-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <div class="service-badge">Most Popular</div>
+        </div>
+        <div class="service-image">
+          <img src="images/gra.png" alt="Graphic Design">
+          <div class="service-overlay">
+            <i class="fas fa-eye"></i>
+          </div>
+        </div>
+        <div class="service-content">
+          <h3 class="service-title">
+            <span class="color-red">Custom</span> 
+            <span class="color-yellow">Graphic</span> 
+            <span class="color-green">Design</span>
+          </h3>
+          <p class="service-description">Professional logos, posters, stickers, and social media templates that make your brand stand out.</p>
+          <div class="service-features">
+            <br>
+            <br>
+            <span class="feature-tag">Logos</span>
+            <span class="feature-tag">Posters</span>
+            <span class="feature-tag">Social Media</span>
+          </div>
+          <br>
+          <br>
+          <div class="service-pricing">
+            <div class="price-range">
+              <span class="currency">₱</span>
+              <span class="price-min">200</span>
+              <span class="price-separator">-</span>
+              <span class="price-max">500</span>
+            </div>
+            <small class="price-note">depends on complexity</small>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_qjhHXsxQhP9Ug4dEqVnOymRQuRfhvHhvIwTCdxFHAHrdQ/viewform?usp=dialog" class="btn btn-primary service-btn">
+            <i class="fas fa-shopping-cart"></i> Order Now
+          </a>
+        </div>
+      </div>
+
+      <!-- AutoCAD Service -->
+      <div class="service-card academic" data-category="academic">
+        <div class="service-header">
+          <div class="service-icon">
+            <i class="fas fa-drafting-compass"></i>
+          </div>
+        </div>
+        <div class="service-image">
+          <img src="images/Autocad-Logo.png" alt="AutoCAD">
+          <div class="service-overlay">
+            <i class="fas fa-eye"></i>
+          </div>
+        </div>
+        <div class="service-content">
+          <h3 class="service-title">
+            <span class="color-red">AutoCAD</span> 
+            <span class="color-blue">Mini Projects</span>
+          </h3>
+          <p class="service-description">Professional 2D/3D drafting, layouts, and technical drawings for academic and professional projects.</p>
+          <div class="service-features">
+            <span class="feature-tag">2D Drafting</span>
+            <span class="feature-tag">3D Modeling</span>
+            <span class="feature-tag">Technical Drawings</span>
+          </div>
+          <br>
+          <div class="service-pricing">
+            <div class="price-range">
+              <span class="currency">₱</span>
+              <span class="price-min">300</span>
+              <span class="price-separator">-</span>
+              <span class="price-max">800</span>
+            </div>
+            <small class="price-note">per project</small>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_qjhHXsxQhP9Ug4dEqVnOymRQuRfhvHhvIwTCdxFHAHrdQ/viewform?usp=dialog" class="btn btn-primary service-btn">
+            <i class="fas fa-shopping-cart"></i> Order Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Student Services -->
+      <div class="service-card academic" data-category="academic">
+        <div class="service-header">
+          <div class="service-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="service-badge student">Student Special</div>
+        </div>
+        <div class="service-image">
+          <img src="images/stu.png" alt="Student Services">
+          <div class="service-overlay">
+            <i class="fas fa-eye"></i>
+          </div>
+        </div>
+        <div class="service-content">
+          <h3 class="service-title">
+            <span class="color-blue">Student-Friendly</span> 
+            <span class="color-green">Services</span>
+          </h3>
+          <p class="service-description">Affordable academic support including resume design, portfolio layouts, and report formatting.</p>
+          <div class="service-features">
+            <span class="feature-tag">Resume Design</span>
+            <span class="feature-tag">Portfolio</span>
+            <span class="feature-tag">Report Formatting</span>
+          </div>
+          <div class="service-pricing">
+            <div class="price-range">
+              <span class="currency">₱</span>
+              <span class="price-min">150</span>
+              <span class="price-separator">-</span>
+              <span class="price-max">400</span>
+            </div>
+            <small class="price-note">per project</small>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_qjhHXsxQhP9Ug4dEqVnOymRQuRfhvHhvIwTCdxFHAHrdQ/viewform?usp=dialog" class="btn btn-primary service-btn">
+            <i class="fas fa-shopping-cart"></i> Order Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Tech Assistance -->
+      <div class="service-card tech" data-category="tech">
+        <div class="service-header">
+          <div class="service-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+        </div>
+        <div class="service-image">
+          <img src="images/tec.png" alt="Tech Assistance">
+          <div class="service-overlay">
+            <i class="fas fa-eye"></i>
+          </div>
+        </div>
+        <div class="service-content">
+          <h3 class="service-title">
+            <span class="color-blue">Tech</span> 
+            <span class="color-purple">Assistance</span>
+          </h3>
+          <p class="service-description">Professional IT support, system troubleshooting, and technical advice to keep your devices running smoothly.</p>
+          <div class="service-features">
+            <span class="feature-tag">IT Support</span>
+            <span class="feature-tag">Troubleshooting</span>
+            <span class="feature-tag">Tech Advice</span>
+          </div>
+          <div class="service-pricing">
+            <div class="price-range">
+              <span class="currency">₱</span>
+              <span class="price-min">100</span>
+              <span class="price-separator">-</span>
+              <span class="price-max">300</span>
+            </div>
+            <small class="price-note">per session</small>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_qjhHXsxQhP9Ug4dEqVnOymRQuRfhvHhvIwTCdxFHAHrdQ/viewform?usp=dialog" class="btn btn-primary service-btn">
+            <i class="fas fa-shopping-cart"></i> Order Now
+          </a>
+        </div>
+      </div>
+
+      <!-- PC Assembly -->
+      <div class="service-card tech" data-category="tech">
+        <div class="service-header">
+          <div class="service-icon">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <div class="service-badge premium">Premium</div>
+        </div>
+        <div class="service-image">
+          <img src="images/pc2.webp" alt="PC Assembly">
+          <div class="service-overlay">
+            <i class="fas fa-eye"></i>
+          </div>
+        </div>
+        <div class="service-content">
+          <h3 class="service-title">
+            <span class="color-blue">PC Assembly</span> 
+            <span class="color-green">& Setup</span>
+          </h3>
+          <p class="service-description">Complete PC building service with parts recommendation, professional assembly, and cable management.</p>
+          <div class="service-features">
+            <span class="feature-tag">Parts Selection</span>
+            <span class="feature-tag">Assembly</span>
+            <span class="feature-tag">Cable Management</span>
+          </div>
+          <div class="service-pricing">
+            <div class="price-range">
+              <span class="currency">₱</span>
+              <span class="price-min">500</span>
+              <span class="price-separator">-</span>
+              <span class="price-max">1,500</span>
+            </div>
+            <small class="price-note">depending on build</small>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_qjhHXsxQhP9Ug4dEqVnOymRQuRfhvHhvIwTCdxFHAHrdQ/viewform?usp=dialog" class="btn btn-primary service-btn">
+            <i class="fas fa-shopping-cart"></i> Order Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Web Development -->
+      <div class="service-card tech" data-category="tech">
+        <div class="service-header">
+          <div class="service-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="service-badge new">New Service</div>
+        </div>
+        <div class="service-image">
+          <img src="images/GH Desktop.jpg" alt="Web Development">
+          <div class="service-overlay">
+            <i class="fas fa-eye"></i>
+          </div>
+        </div>
+        <div class="service-content">
+          <h3 class="service-title">
+            <span class="color-purple">Web</span> 
+            <span class="color-blue">Development</span>
+          </h3>
+          <p class="service-description">Custom websites and web applications built with modern technologies and responsive design.</p>
+          <div class="service-features">
+            <span class="feature-tag">Responsive Design</span>
+            <span class="feature-tag">Modern Tech</span>
+            <span class="feature-tag">SEO Optimized</span>
+          </div>
+          <div class="service-pricing">
+            <div class="price-range">
+              <span class="currency">₱</span>
+              <span class="price-min">1,000</span>
+              <span class="price-separator">-</span>
+              <span class="price-max">5,000</span>
+            </div>
+            <small class="price-note">project based</small>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_qjhHXsxQhP9Ug4dEqVnOymRQuRfhvHhvIwTCdxFHAHrdQ/viewform?usp=dialog" class="btn btn-primary service-btn">
+            <i class="fas fa-shopping-cart"></i> Order Now
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-
-
- <section class="service-item">
-  <div class="service-image">
-    <img src="images/Autocad-Logo.png" alt="auto">
-  </div>
-  <div class="service-info">
-    <h2><span class="color-red">AutoCAD Mini Projects</span></h2>
-        
-    <p>Simple layouts, drafting, 2D/3D sketches</p>
-    <p class="price">💵 Price: ₱300 – ₱800  <small>(per project)</small></p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_qjhHXsxQhP9Ug4dEqVnOymRQuRfhvHhvIwTCdxFHAHrdQ/viewform?usp=dialog" class="btn">Order Now</a>
-  </div>
-</section>
- 
-
-<section class="service-item">
-  <div class="service-image">
-    <img src="images/stu.png" alt="auto">
-  </div>
-  <div class="service-info">
-    <h2><span class="color-blue">Student-Friendly Services </span></h2>
-        
-    <p>Resume design, portfolio layouts, report formatting </p>
-    <p class="price">💵 Price: ₱150 – ₱400   <small>(per project)</small></p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_qjhHXsxQhP9Ug4dEqVnOymRQuRfhvHhvIwTCdxFHAHrdQ/viewform?usp=dialog" class="btn">Order Now</a>
-  </div>
-</section>
-
-
-
-<section class="service-item">
-  <div class="service-image">
-    <img src="images/tec.png" alt="auto">
-  </div>
-  <div class="service-info">
-    <h2><span class="color-blue">Tech Assistance </span></h2>
-        
-    <p>Basic IT support, system troubleshooting, advice  </p>
-    <p class="price">💵 Price: ₱100 – ₱300     <small>(per session)</small></p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_qjhHXsxQhP9Ug4dEqVnOymRQuRfhvHhvIwTCdxFHAHrdQ/viewform?usp=dialog" class="btn">Order Now</a>
+<!-- Process Section -->
+<section class="process-section">
+  <div class="container">
+    <h2 class="section-title">How It Works</h2>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Choose Service</h3>
+          <p>Select the service that best fits your needs from our comprehensive list.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Place Order</h3>
+          <p>Fill out our order form with your specific requirements and preferences.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>We Deliver</h3>
+          <p>Our team works on your project and delivers high-quality results on time.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-
-
-<section class="service-item">
-  <div class="service-image">
-    <img src="images/pc2.webp" alt="auto">
-  </div>
-  <div class="service-info">
-    <h2><span class="color-blue">PC Assembly & Setup </span></h2>
-        
-    <p>Parts recommendation, assembly, cable management  </p>
-    <p class="price">💵 Price: ₱500 – ₱1,500 <small> (depending on build)</small></p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7_qjhHXsxQhP9Ug4dEqVnOymRQuRfhvHhvIwTCdxFHAHrdQ/viewform?usp=dialog" class="btn">Order Now</a>
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Ready to Get Started?</h2>
+      <p>Choose from our wide range of professional services and bring your ideas to life.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        <a href="about.html" class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
   </div>
 </section>
-
-
-
 
   <footer>
     <p>&copy; 2025 AlamsNa. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Service filtering functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const serviceCards = document.querySelectorAll('.service-card');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          // Add active class to clicked button
+          this.classList.add('active');
+
+          const category = this.getAttribute('data-category');
+
+          serviceCards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+              card.style.display = 'block';
+              card.style.animation = 'fadeInUp 0.5s ease';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animated');
+          }
+        });
+      }, observerOptions);
+
+      // Observe elements for animation
+      const animateElements = document.querySelectorAll('.service-card, .step, .feature-card');
+      animateElements.forEach(el => {
+        el.classList.add('animate-on-scroll');
+        observer.observe(el);
+      });
+
+      // Service card hover effects
+      serviceCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-10px)';
+        });
+
+        card.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0)';
+        });
+      });
+    });
+  </script>
 </body>
 </html>
-
